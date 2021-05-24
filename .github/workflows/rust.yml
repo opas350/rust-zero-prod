@@ -51,7 +51,7 @@ jobs:
           components: clippy
       - uses: actions-rs/clippy-check@v1
         with:
-          token: ${{ secrets.GH_TOKEN}}
+          command: clippy
           args: -- -D warnings
 
   coverage:
