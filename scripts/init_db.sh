@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -x
-set  -eo pipefail
+set -eo pipefail
 
 DB_USER=${POSTGRES_USER:=postgres}
 DB_PASSWORD="${POSTGRES_PASSWORD:=password}"
