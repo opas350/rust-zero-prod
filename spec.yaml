@@ -3,8 +3,10 @@ name: zero2pro
 region: sfo3
 services:
   - name: zero2prod
-    dockerfile_path: Dockerfile
-    source_dir: .
+    image:
+      registry_type: DOCKER_HUB
+      registry: docker.io
+      repository: opas350/zero2prod
     github:
       branch: main
       deploy_on_push: true
